@@ -32,7 +32,6 @@ Midnight Times is a web-based application that allows users to search for news a
     python3 manage.py runserver
 
 ## Development Time and Experience
-- Total time taken: 48 hours
 - Experience:
     a). The first problem was doing Authentication and autherisation of the users with built in feature in django.
     so to solve this I went through lectures and blogs to know how to implement these functionalities in django.<br/>
