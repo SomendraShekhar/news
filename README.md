@@ -13,7 +13,7 @@ Midnight Times is a web-based application that allows users to search for news a
 
 ## Setup Instructions
 1. Clone the repository:
-    git clone [https://github.com/your-repo/midnight-times.git](https://github.com/SomendraShekhar/news.git)
+    git clone [midnight-times news repo](https://github.com/SomendraShekhar/news.git)
     cd midnight-times
 
 2. Install the required libraries:
