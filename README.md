@@ -35,10 +35,10 @@ Midnight Times is a web-based application that allows users to search for news a
 - Total time taken: 48 hours
 - Experience:
     a). The first problem was doing Authentication and autherisation of the users with built in feature in django.
-    so to solve this I went through lectures and blogs to know how to implement these functionalities in django.
+    so to solve this I went through lectures and blogs to know how to implement these functionalities in django.<br/>
     b). Implementing celery and redis was toughest because i have never worked on anything like this 
     and did not knew about the background job which works allong side with application without disrupting it.
-    so to overcame this i had to search a lot that what can be used and how it can be used.
+    so to overcame this i had to search a lot that what can be used and how it can be used.<br/>
     c) Generally i used to create every functinality in one app only but i have always thought of creating new app 
     for different functionalities so i had to learn about modularisation of the application.    
 
