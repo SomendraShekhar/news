@@ -19,7 +19,7 @@ Midnight Times is a web-based application that allows users to search for news a
 2. Install the required libraries:
     pip install -r requirements.txt
 4. Configure environment variables:
-    - Create a `.env` file in the project root and add your News API key:
+    - Create a `enviornment.env` file in the project root and add your News API key:
         NEWS_API_KEY=your_news_api_key
 5. Run database migrations:
     python3 manage.py makemigrations
