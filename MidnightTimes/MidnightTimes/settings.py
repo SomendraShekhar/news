@@ -12,14 +12,15 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-from dotenv import load_dotenv
-
-load_dotenv()
-NEWS_API_KEY = os.getenv('NEWS_API_KEY')
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, 'environment.env'))
+NEWS_API_KEY = env('NEWS_API_KEY')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
