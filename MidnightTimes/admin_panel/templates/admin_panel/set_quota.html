@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Set Quota for {{ user.username }}</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="quota">Quota:</label>
+    <input type="number" id="quota" name="quota" value="{{ user.userprofile.quota }}">
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

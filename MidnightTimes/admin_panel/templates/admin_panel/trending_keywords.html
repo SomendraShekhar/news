@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Trending Keywords</h1>
+<ul>
+    {% for keyword in keywords %}
+        <li>{{ keyword.keyword }} ({{ keyword.count }} searches)</li>
+    {% endfor %}
+</ul>
+{% endblock %}

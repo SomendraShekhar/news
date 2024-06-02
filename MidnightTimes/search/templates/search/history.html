@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Search History</h1>
+<ul>
+    {% for search in keyword_searches %}
+        <li>
+            <a href="{% url 'search_results' search.id %}">{{ search.keyword }}</a>
+            <p>Last Searched: {{ search.last_searched }}</p>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'search_news' %}">New Search</a>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!-- login.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-header">Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Username" class="form-input"><br>
+            <input type="password" name="password" placeholder="Password" class="form-input"><br>
+            <button type="submit" class="form-submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'signup' %}" class="form-link">Sign up</a></p>
+    </div>
+</body>
+</html>

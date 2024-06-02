@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Search Results for "{{ keyword_search.keyword }}"</h1>
+<ul>
+    {% for article in articles %}
+        <li>
+            <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+            <p>{{ article.description }}</p>
+            <p>Published at: {{ article.published_at }}</p>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'search_news' %}">New Search</a>
+<a href="{% url 'search_history' %}">View Search History</a>
+{% endblock %}
