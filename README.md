@@ -16,20 +16,25 @@ Midnight Times is a web-based application that allows users to search for news a
     git clone [midnight-times news repo](https://github.com/SomendraShekhar/news.git)
     cd midnight-times
 
-2. Install the required libraries:
+2. Install the required libraries:<br/>
     pip install -r requirements.txt
 4. Configure environment variables:
-    - Create a `enviornment.env` file in the project root and add your News API key:
+    - Create a `enviornment.env` file in the project root and add your News API key:<br/>
         NEWS_API_KEY=your_news_api_key
-5. Run database migrations:
-    python3 manage.py makemigrations
-    python3 manage.py migrate
+5. Run database migrations:<br/>
+    python3 manage.py makemigrations<br/>
+    python3 manage.py migrate<br/>
 
-6. Create a superuser for accessing the admin panel:
+6. Create a superuser for accessing the admin panel:<br/>
     python manage.py createsuperuser
 
-7. Start the development server:
+7. Start the development server:<br/>
     python3 manage.py runserver
+8. start redis server<br/>
+   redis-server
+9. start celery<br/>
+   celery -A MidnightTimes worker --loglevel=info<br/>
+   celery -A MidnightTimes beat --loglevel=info
 
 ## Development Time and Experience
 - Experience:
